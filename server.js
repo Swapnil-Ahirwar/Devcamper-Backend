@@ -17,6 +17,9 @@ const bootcamps = require('./routes/bootcamps');
 
 const app = express();
 
+// Body parser middleware
+app.use(express.json());
+
 // app.use(logger);
 // Dev loggong Middleware
 if(process.env.NODE_ENV === 'development'){
